@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input type="text" placeholder="ENTER YOUR NAME" id="name" />
+      <input type="password" placeholder="ENTER YOUR password" />
+      <input type="email" placeholder="ENTER YOUR email" />
+      <select name="" id="">
+        <option value="">MEN</option>
+        <option value="">Women</option>
+      </select>
+      <input type="submit" value="Submit" />
+    </form>
+
+    <a href="www.google.com">Google</a>
+
+    <script>
+      const value = document.getElementById("name").value;
+      document.getElementById("form").addEventListener("submit", MyFun);
+      function MyFun(e) {
+        e.preventDefault();
+        console.log(value);
+      }
+    </script>
+  </body>
+</html>
